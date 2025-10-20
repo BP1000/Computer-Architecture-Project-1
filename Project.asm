@@ -45,6 +45,25 @@ RED = 4
 INTENSE =8
 WHITE = 15
 
+.code
+main PROC
+	mov edx, OFFSET welcomeMSG ;printing welcome message
+	call WriteString
+	call Crlf
+	call Crlf
+
+	mov edx, OFFSET instructions ;printing instructions
+	call WriteString
+	call Crlf
+	call Crlf
+
+
+
+
+	INVOKE ExitProcess
+main ENDP
+END main
+
 
 
 
